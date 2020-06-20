@@ -146,7 +146,7 @@ font-family: 'Libre Baskerville', serif;
 
 body {
   display: flex;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', Arial, serif;
   color: black;
   background-color: whitesmoke;
 }
@@ -191,7 +191,7 @@ header {
 }
 
 h1 {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Playfair Display', Times New Roman, serif;
   padding: 1rem;
   font-size: 8rem;
   margin-left: auto;
@@ -233,14 +233,14 @@ h2 {
   color: black;
   position: relative;
   top: 1rem;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   padding: 0.5rem;
 }
 
 p {
   color: black;
-  font-size: 1.6rem;
+  font-size: 2.6rem;
   letter-spacing: 0.01rem;
   line-height: 1.4;
 }
@@ -265,7 +265,7 @@ i:hover {
 }
 
 a {
-  width: 10%;
+  width: 10;
   margin-left: auto;
   margin-right: auto;
   font-size: 5rem;
@@ -281,6 +281,7 @@ a {
   padding: 0.6rem;
   position: relative;
   top: 5rem;
+  font-size: 1.5rem;
 
 }
 
@@ -318,7 +319,13 @@ a {
     margin-top: -5rem;
     font-size: 3rem;
   }
-
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.4rem;
+  }
 }
 
 
@@ -394,6 +401,13 @@ a {
     font-size: 2.5rem;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.4rem;
+  }
 
 }
 
@@ -430,10 +444,18 @@ a {
     margin-top: -4rem;
     font-size: 2rem;
   }
+  
+    h2 {
+    font-size: 1.8rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
 
   .cssicon {
     margin-right: auto;
     margin-left: -5rem;
   }
-
+  
 }
