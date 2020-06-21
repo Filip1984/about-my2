@@ -148,7 +148,7 @@ body {
   display: flex;
   font-family: 'Libre Baskerville', Arial, serif;
   color: black;
-  background-color: whitesmoke;
+  background-color: whitesmok;
 }
 
 /*=== wall===*/
@@ -219,13 +219,17 @@ article {
   padding: 5rem;
 }
 
-#icon {
+.icon {
   text-align: center;
   padding: 2rem;
 }
 
-.icon {
+img {
   width: 10rem;
+}
+
+.cssicon {
+  width: 40rem;
 }
 
 h2 {
@@ -281,18 +285,28 @@ a {
   position: relative;
   top: 5rem;
   font-size: 1.5rem;
+  opacity: 0.97;
 }
 
 
 @media(min-width: 1201px) {
 
+  body {
+    background-image: url(assets/tlo1.png);
+  }
+  
   #ground {
     height: 59rem;
+    box-shadow: 10px 10px 10px black;
   }
 
   #content {
-  width: 60%;
-}
+    width: 60%;
+    box-shadow: 10px 10px 20px 10px black;
+    position: relative;
+    margin-top: 2rem;
+    background-color: hsla(0, 0%, 100%, .95);
+  }
 
   #down {
     display: none;
@@ -321,37 +335,48 @@ a {
     margin-top: -5rem;
     font-size: 3rem;
   }
+
   h2 {
     font-size: 2rem;
   }
-  
+
   p {
     font-size: 1.4rem;
   }
-  
+
   a {
     font-size: 3rem;
   }
-  
+
   .mail {
-  font-size: 1.6rem;
-}
-  
-  .foot {
-  font-size: 1rem;
+    font-size: 1.6rem;
   }
-  
+
+  .foot {
+    font-size: 1rem;
+  }
+
 }
 
 
 @media (max-width: 1200px) and (min-width: 1025px) {
-  #ground {
-    height: 52rem;
+  
+  body {
+    background-image: url(assets/tlo1.png);
   }
   
-    #content {
-  width: 60%;
-}
+  #ground {
+    height: 52rem;
+    box-shadow: 10px 10px 10px black;
+  }
+
+  #content {
+    width: 60%;
+    box-shadow: 10px 10px 20px 10px black;
+    position: relative;
+    margin-top: 2rem;
+    background-color: hsla(0, 0%, 100%, .95);
+  }
 
   #down {
     display: none;
@@ -380,43 +405,56 @@ a {
     margin-top: -5rem;
     font-size: 3rem;
   }
-  
-    .mail {
-  font-size: 1.6rem;
-}
-  
+
+  .mail {
+    font-size: 1.6rem;
+  }
+
   .foot {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 
   p {
     font-size: 1.4rem;
   }
-  
+
   a {
     font-size: 3rem;
   }
-  
+
   .mail {
-  font-size: 1.6rem;
-}
-  
-  .foot {
-  font-size: 1rem;
+    font-size: 1.6rem;
   }
-  
+
+  .foot {
+    font-size: 1rem;
+  }
+
 }
 
 
 
 @media (max-width: 1024px) and (min-width: 769px) {
+  
+  body {
+    background-image: url(assets/tlo1.png);
+  }
 
   #ground {
     height: 52rem;
+    box-shadow: 10px 10px 10px black;
   }
 
   #down {
     display: none;
+  }
+  
+  #content {
+    width: 80%;
+    box-shadow: 10px 10px 20px 10px black;
+    position: relative;
+    margin-top: 2rem;
+    background-color: hsla(0, 0%, 100%, .95);
   }
 
   .logo {
@@ -447,25 +485,29 @@ a {
   h2 {
     font-size: 2rem;
   }
-  
+
   p {
     font-size: 1.4rem;
   }
-  
+
   p {
     font-size: 1.4rem;
   }
-  
+
   a {
     font-size: 3rem;
   }
-  
+
   .mail {
-  font-size: 1.6rem;
-}
-  
+    font-size: 1.6rem;
+  }
+
   .foot {
-  font-size: 1rem;
+    font-size: 1rem;
+  }
+  
+  .cssicon {
+    margin-left: -2rem;
   }
 
 }
@@ -503,30 +545,29 @@ a {
     margin-top: -4rem;
     font-size: 2rem;
   }
-  
-    h2 {
+
+  h2 {
     font-size: 1.8rem;
   }
-  
+
 
   .cssicon {
-    margin-right: auto;
-    margin-left: -5rem;
+    margin-left: -7rem;
   }
-  
+
   p {
     font-size: 1.4rem;
   }
-  
+
   a {
     font-size: 3rem;
   }
-  
+
   .mail {
-  font-size: 1.6rem;
-}
-  
+    font-size: 1.6rem;
+  }
+
   .foot {
-  font-size: 1rem;
+    font-size: 1rem;
   }
 }
