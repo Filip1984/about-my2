@@ -3,78 +3,61 @@
 }
 
 body {
-  display: flex;
-  font-family: 'Libre Baskerville', Arial, serif;
-  color: black;
-  background-color: whitesmok;
+  width: 100vw;
+  background-image: url(assets/tlo1.png);
 }
 
-/*=== wall===*/
-
-#container {
-  width: 160rem;
-  height: 100vh;
-}
-
-#ground {
-  width: 100%;
-  height: 125rem;
+.header {
   background: url(assets/tlo2.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  display: table;
+  box-shadow: 10px 10px 20px;
 }
 
 .logo {
-  width: 70rem;
-  padding: 2rem;
-  position: relative;
-  top: 2rem;
+  width: 20rem;
+  margin-top: 1.3rem;
 }
 
 .my {
-  width: 30rem;
+  width: 10rem;
   border-radius: 50%;
-}
-
-#down {
-  position: relative;
-  top: 50rem;
-}
-
-span {
-  font-size: 10rem;
-  color: whitesmoke;
-}
-
-header {
-  text-align: center;
+  margin-bottom: 1rem;
+  box-shadow: 10px 10px 80px 10px snow;
 }
 
 h1 {
   font-family: 'Playfair Display', Times New Roman, serif;
   padding: 1rem;
-  font-size: 8rem;
-  margin-left: auto;
-  margin-right: auto;
-  text-shadow: 10px 10px 20px;
+  font-size: 3rem;
   color: black;
+  margin-bottom: 1rem;
 }
 
 h3 {
   color: black;
-  margin-top: 2rem;
-  font-size: 2.5rem;
-  padding: 2rem;
+  font-size: 1.1rem;
 }
 
-/*===  ===*/
+#down {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: hsla(0, 0%, 100%, .7);
+}
 
 #content {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100vw;
+  background-color: hsla(0, 0%, 100%, .97);
 }
 
-article {
-  padding: 5rem;
+img {
+  width: 4rem;
 }
 
 .icon {
@@ -82,353 +65,384 @@ article {
   padding: 2rem;
 }
 
-img {
-  width: 10rem;
+.cssicon {
+  width: 14rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.cssicon {
-  width: 40rem;
+article {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 h2 {
-  color: black;
-  position: relative;
-  top: 1rem;
-  font-size: 4rem;
+  color: #333;
+  font-size: 1.8rem;
   text-align: center;
-  padding: 0.5rem;
+  padding-top: 4rem;
 }
 
 p {
   color: black;
-  font-size: 2.6rem;
-  letter-spacing: 0.01rem;
-  line-height: 1.4;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  line-height: 1.3;
 }
 
 .contact {
-  position: relative;
-  top: -2rem;
-}
-
-.mail {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 2.5rem;
+  padding-bottom: 2rem;
 }
 
-i {
+.mail a {
+  font-size: 2rem;
+  width: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  color: #333;
+  display: block;
   transition: all 0.5s ease-in-out;
 }
 
-i:hover {
+.mail a:hover {
   transform: scale(1.4);
   color: dimgray;
 }
 
-a {
-  width: 10;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 5rem;
-  display: block;
-  padding: 1rem;
-  color: black;
+.contact p {
+  font-size: 1.6rem;
+  font-style: italic;
 }
 
-.foot {
+.footer {
   text-align: center;
-  width: 100%;
-  background-color: dimgrey;
+  width: 100vw;
+  background-color: gray;
   padding: 0.6rem;
-  position: relative;
-  top: 5rem;
-  font-size: 1.5rem;
   opacity: 0.97;
 }
 
+small {
+  font-size: 0.8rem;
+}
+
+strong {
+  font-weight: 600;
+}
 
 /*=== @media ===*/
 
-
 @media(min-width: 1201px) {
 
-  body {
-    background-image: url(assets/tlo1.png);
-  }
-  
-  #ground {
-    height: 59rem;
-    box-shadow: 10px 10px 10px black;
-  }
-
-  #content {
-    width: 60%;
-    box-shadow: 10px 10px 20px 10px black;
-    position: relative;
-    margin-top: 2rem;
-    background-color: hsla(0, 0%, 100%, .95);
-  }
-
-  #down {
-    display: none;
-  }
-
   .logo {
-    width: 60rem;
-    position: relative;
-    top: -1rem;
+    width: 70rem;
   }
 
   .my {
-    width: 20rem;
+    width: 15rem;
     border-radius: 50%;
-    position: relative;
-    top: -4rem;
-  }
-
-  h1 {
-    font-size: 11rem;
-    text-shadow: 10px 10px 20px snow;
-  }
-
-  h3 {
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -5rem;
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  a {
-    font-size: 3rem;
-  }
-
-  .mail {
-    font-size: 1.6rem;
-  }
-
-  .foot {
-    font-size: 1rem;
-  }
-
-}
-
-
-@media (max-width: 1200px) and (min-width: 1025px) {
-  
-  body {
-    background-image: url(assets/tlo1.png);
-  }
-  
-  #ground {
-    height: 52rem;
-    box-shadow: 10px 10px 10px black;
-  }
-
-  #content {
-    width: 60%;
-    box-shadow: 10px 10px 20px 10px black;
-    position: relative;
-    margin-top: 2rem;
-    background-color: hsla(0, 0%, 100%, .95);
-  }
-
-  #down {
-    display: none;
-  }
-
-  .logo {
-    width: 60rem;
-    position: relative;
-    top: -1rem;
-  }
-
-  .my {
-    width: 20rem;
-    border-radius: 50%;
-    position: relative;
-    top: -4rem;
-  }
-
-  h1 {
-    font-size: 11rem;
-    text-shadow: 10px 10px 20px snow;
-  }
-
-  h3 {
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -5rem;
-    font-size: 3rem;
-  }
-
-  .mail {
-    font-size: 1.6rem;
-  }
-
-  .foot {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  a {
-    font-size: 3rem;
-  }
-
-  .mail {
-    font-size: 1.6rem;
-  }
-
-  .foot {
-    font-size: 1rem;
-  }
-
-}
-
-
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  
-  body {
-    background-image: url(assets/tlo1.png);
-  }
-
-  #ground {
-    height: 52rem;
-    box-shadow: 10px 10px 10px black;
-  }
-
-  #down {
-    display: none;
-  }
-  
-  #content {
-    width: 80%;
-    box-shadow: 10px 10px 20px 10px black;
-    position: relative;
-    margin-top: 2rem;
-    background-color: hsla(0, 0%, 100%, .95);
-  }
-
-  .logo {
-    width: 60rem;
-    position: relative;
-    top: -1rem;
-  }
-
-  .my {
-    width: 20rem;
-    border-radius: 50%;
-    position: relative;
-    top: -4rem;
+    margin-bottom: 3.5rem;
+    box-shadow: 10px 10px 30px 10px #111
   }
 
   h1 {
     font-size: 10rem;
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -2rem;
+    text-shadow: -5px -5px 20px snow;
   }
 
   h3 {
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -4rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
+    text-shadow: -5px -5px 10px snow;
+  }
+
+  #down {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+  
+  #content {
+    width: 60vw;
+    background-color: hsla(0, 0%, 100%, .97);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px black;
+  }
+  
+   img {
+    width: 8rem;
+  }
+
+  .cssicon {
+    width: 34rem;
+  }
+
+  article {
+    width: 50vw;
+    margin-top: 5rem;
   }
 
   h2 {
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 1.4rem;
-  }
-
-  a {
     font-size: 3rem;
   }
 
-  .mail {
-    font-size: 1.6rem;
+  p {
+    font-size: 2rem;
   }
 
-  .foot {
-    font-size: 1rem;
+  .mail a {
+    font-size: 3rem;
   }
   
+  .contact p {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    margin-top: 5rem;
+  }
+
+  small {
+    font-size: 1.3rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+
+  .logo {
+    width: 70rem;
+  }
+
+  .my {
+    width: 15rem;
+    border-radius: 50%;
+    margin-bottom: 3.5rem;
+    box-shadow: 10px 10px 30px 10px #111
+  }
+
+  h1 {
+    font-size: 10rem;
+    text-shadow: -5px -5px 20px snow;
+  }
+
+  h3 {
+    font-size: 4rem;
+    text-shadow: -5px -5px 10px snow;
+  }
+  
+  #down {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #content {
+    width: 60vw;
+    background-color: hsla(0, 0%, 100%, .97);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px black;
+  }
+  
+   img {
+    width: 8rem;
+  }
+
   .cssicon {
-    margin-left: -2rem;
+    width: 34rem;
+  }
+
+  article {
+    width: 50vw;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .mail a {
+    font-size: 3rem;
+  }
+  
+  .contact p {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    margin-top: 5rem;
+  }
+
+  small {
+    font-size: 1.3rem;
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  
+    .logo {
+    width: 50rem;
+  }
+
+  .my {
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 3.5rem;
+    box-shadow: 10px 10px 30px 10px #111
+  }
+
+  h1 {
+    font-size: 9rem;
+    text-shadow: -5px -5px 20px snow;
+  }
+
+  h3 {
+    font-size: 3.5rem;
+    text-shadow: -5px -5px 10px snow;
+  }
+
+  #down {
+    font-size: 2.5rem;
+  }
+  
+  #content {
+    width: 60vw;
+    background-color: hsla(0, 0%, 100%, .97);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px black;
+  }
+  
+   img {
+    width: 8rem;
+  }
+
+  .cssicon {
+    width: 24rem;
+  }
+
+  article {
+    width: 50vw;
+    margin-top: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  .mail a {
+    font-size: 3rem;
+  }
+  
+  .contact p {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    margin-top: 5rem;
+  }
+
+  small {
+    font-size: 1.3rem;
+  }
+
+  strong {
+    font-weight: 500;
   }
 
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
-
-  #ground {
-    height: 38rem;
-  }
-
-  #down {
-    display: none;
-  }
-
-  .logo {
-    width: 50rem;
-    position: relative;
-    top: -1rem;
+  
+   .logo {
+    width: 40rem;
   }
 
   .my {
-    width: 15rem;
-    position: relative;
-    top: -3rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-bottom: 3.5rem;
+    box-shadow: 10px 10px 30px 10px #111
   }
 
   h1 {
-    font-size: 6rem;
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -2rem
+    font-size: 7rem;
+    text-shadow: -5px -5px 20px snow;
   }
 
   h3 {
-    text-shadow: 10px 10px 20px snow;
-    margin-top: -4rem;
-    font-size: 2rem;
+    font-size: 2.6rem;
+    text-shadow: -5px -5px 10px snow;
+  }
+
+  #content {
+    width: 80vw;
+    background-color: hsla(0, 0%, 100%, .97);
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 10px 20px 10px black;
+  }
+  
+   img {
+    width: 8rem;
+  }
+
+  .cssicon {
+    width: 20rem;
+  }
+
+  article {
+    width: 60vw;
+    margin-top: 5rem;
   }
 
   h2 {
-    font-size: 1.8rem;
-  }
-
-
-  .cssicon {
-    margin-left: -7rem;
+    font-size: 2.8rem;
   }
 
   p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
-  a {
+  .mail a {
     font-size: 3rem;
   }
-
-  .mail {
-    font-size: 1.6rem;
+  
+  .contact p {
+    font-size: 2rem;
+  }
+  
+  .footer {
+    margin-top: 5rem;
   }
 
-  .foot {
-    font-size: 1rem;
+  small {
+    font-size: 1.3rem;
+  }
+
+  strong {
+    font-weight: 500;
   }
 }
