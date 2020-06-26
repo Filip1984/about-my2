@@ -153,18 +153,17 @@ strong {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     text-shadow: -5px -5px 20px snow;
   }
 
   h3 {
-    font-size:3rem;
+    font-size:2.5rem;
     text-shadow: -5px -5px 10px snow;
   }
 
   #down {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    display: none;
   }
   
   #content {
@@ -193,7 +192,7 @@ strong {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .mail a {
@@ -242,8 +241,7 @@ strong {
   }
   
   #down {
-    font-size: 4rem;
-    margin-bottom: 2rem;
+    display: none;
   }
 
   #content {
@@ -272,7 +270,7 @@ strong {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .mail a {
@@ -321,7 +319,7 @@ strong {
   }
 
   #down {
-    font-size: 2.5rem;
+    display: none;
   }
   
   #content {
@@ -350,7 +348,7 @@ strong {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .mail a {
@@ -397,6 +395,10 @@ strong {
     font-size: 2.6rem;
     text-shadow: -5px -5px 10px snow;
   }
+  
+  #down {
+    display: none;
+  }
 
   #content {
     width: 80vw;
@@ -424,7 +426,7 @@ strong {
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   .mail a {
